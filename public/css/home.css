@@ -1,0 +1,12 @@
+main {
+    background-color: var(--color-GrisClaro);
+}
+main section h2.titulares{
+    font-size: var(--titulares);
+}
+main section article p{
+    font-size: var(--precios);
+}
+main section article span, h4{
+    font-size: var(--descuentos-descripciones);
+}

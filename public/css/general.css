@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+:root{
+    --color-Amarillo: #EAC926;
+    --color-Azul: #03264C;
+    --color-Celeste: #1259c3;
+    --color-GrisOoscuro: #666;
+    --color-GrisClaro: #ebebeb;
+    --color-Verde: #39b54a; 
+    --tipografia: 'Roboto', sans-serif;
+    --cuerpo-texto: 12px;
+    --titulares: 24px;
+    --precios: 18px;
+    --descuentos-descripciones: 16px;
+}
+* {box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+      }
+      
+li {
+    list-style: none;
+      }

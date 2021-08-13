@@ -1,0 +1,16 @@
+footer section {
+    text-align: center;
+}
+footer section p{
+    font-size: var(--cuerpo-texto);
+}
+footer section p.izquierda{
+    text-align: left;
+}
+
+/* Revisar */
+footer section i{
+    color: var(--color-Celeste);
+    width: 4rem;
+    margin-bottom: 10px;
+}

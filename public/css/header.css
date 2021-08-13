@@ -1,0 +1,18 @@
+header {
+    background-color: var(--color-Amarillo);
+    padding-bottom: 20px;
+}
+
+header p{
+    text-align: center;
+}
+header div.burger-menu{
+    color: white;
+    text-align: center;
+    display: block;
+    background-color: var(--color-Celeste);
+    margin: auto;
+    width: 35px;
+    padding: 8px;
+    border-radius: 4px;
+}
