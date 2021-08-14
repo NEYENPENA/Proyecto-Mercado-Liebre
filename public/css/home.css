@@ -10,3 +10,6 @@ main section article p{
 main section article span, h4{
     font-size: var(--descuentos-descripciones);
 }
+.banner {
+    display: none;
+}
