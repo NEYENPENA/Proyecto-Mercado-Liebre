@@ -1,16 +1,21 @@
 footer section {
     text-align: center;
 }
-footer section p{
+
+footer p{
     font-size: var(--cuerpo-texto);
+    margin-top: 0px;
 }
 footer section p.izquierda{
     text-align: left;
 }
-
-/* Revisar */
 footer section i{
     color: var(--color-Celeste);
-    width: 4rem;
+    width: 2em;
     margin-bottom: 10px;
+    margin-top: 20px;
+}
+footer section h3 {
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
