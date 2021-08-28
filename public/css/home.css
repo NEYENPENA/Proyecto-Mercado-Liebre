@@ -1,30 +1,42 @@
 main section {
     width: 90%;
     margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    
 }
 main section article{
     margin: 5px 0;
     background-color: white;
-    
 }
 main section h2{
     padding-top: 5px;
 }
-
-main section article div h4{
-    margin-top: 15px;
+/* Nombre de producto */
+main section article .primero h4{
+    margin-top: 15px; 
     display: none;
-
+    color: var(--color-GrisOoscuro);
+    
 }
 main section h2.titulares{
+    width: 100%;
     font-size: var(--titulares);
-    color: var(--color-GrisOoscuro)
+    color: var(--color-GrisOoscuro);
+    
 }
-main section article p{
+
+main section article .primero .precio{
+    color: black;
     font-size: var(--precios);
+    width: 30%;
 }
-main section article span{
+main section article .primero .descuento{
+    text-align: right;
     color: var(--color-Verde);
+    width: 70%;
+    font-size: var(--descuentos-descripciones);
+    
 }
 main section article span, h4{
     font-size: var(--descuentos-descripciones);
@@ -33,23 +45,30 @@ main section article span, h4{
     display: none;
     max-width: 100%;    
 }
-main section article div{
+main section article .primero {
     border-top: solid 1px var(--color-GrisClaro);
     padding: 15px;
     background-color: white;
     width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
     
 }
-/* esto es para el camion */
-main section article div i{
-    border: solid 1px var(--color-Verde);
+/* Icono de camion */
+main section article .primero i{
+    position: absolute;
+    display: ​block​;
+    color: #39b54a;
+    border: 1px solid #39b54a;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
     border-radius: 50%;
-    color: var(--color-Verde);
-    padding-bottom: 12px;
-    padding-left: 5px;
-
-    padding-right: 12px;
-    padding-top: 5px;
+    right: 20px;
+    top: -15px;
 }
 /* imagenes de productos */
 main section article img{
@@ -57,7 +76,18 @@ main section article img{
 }
 
 @media(min-width: 361px){
-    main section article div h4{
+    main section{
+        justify-content: space-between;
+    }
+
+    main section article{
+        width: 47.5%;
+    }
+    main section h2.titulares{
+        
+
+    }
+    main section article .primero h4 {
         display: block;
     }
     main section article{
@@ -70,6 +100,10 @@ main section article img{
 
 }
 @media(min-width: 769px){
+    main section article{
+        width: 22.5%;
 
+        
+    }
 
 }
