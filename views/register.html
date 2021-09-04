@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Register</title>
+</head>
+<body class="register">
+
+    <section>
+        <form action="/" method="POST">
+            <article class="usuario">
+                <label for="nombre">Nombre y Apellido:</label>
+                <input type="name" name="name" id="nombre" required="">
+                    
+                <label for="user">Nombre de Usuario:</label>
+                <input type="username" name="username" id="user">            
+              
+                <label for="date">Fecha de Nacimiento</label>
+                <input type="date" name="fecha" id="date">
+                    
+                <label for="domicilio">Domicilio</label>
+                <input type="text" id="domicilio" name="domicilio">
+            </article>   
+            <article class="negocio">
+                         
+                      <h3>Que desa Hacer</h3>
+                      <label for="perfil">Comprar</label>
+                      <input type="radio" name="perfil" value="Comprar">
+                      <label for="perfil">Vender</label>
+                      <input type="radio" name="perfil" value="Vender">              
+                     
+            </article>
+
+                <article class="categorias">
+                    <h3>Categorias de Interes</h3>
+                    <label for="electro">Electro</label>
+                    <input type="checkbox" name="categorias" value="Electro" id="electro">
+                    
+                    <br><label for="moda">Moda</label>
+                    <input type="checkbox" name="categorias" value="Moda" id="moda">
+                    
+                    <br><label for="juguetes">Jugueteria</label>
+                    <input type="checkbox" name="categorias" value="Jugueteria" id="jugetes">
+                    
+                    <br><label for="Hogar">Hogar</label>
+                    <input type="checkbox" name="categorias" value="Hogar" id="Hogar">
+                    
+                    <br><label for="vida">Vida Sana</label>
+                    <input type="checkbox" name="categorias" value="Vida Sana" id="vida">
+                </article>                      
+            
+            
+               <article>
+                    <label for="photo">Foto de Usuario</label>
+                    <input type="file" name="Avatar" id="photo" accept=".jpg,.png">
+                                            
+                    <label for="contraseña">Contraseña:</label>
+                    <input type="password" name="password" id="contraseña" required="">
+                    
+                    <label for="confirm">Confirmar Contraseña:</label>
+                    <input type="password" name="confirmpassword" id="confirm" required=""> 
+               </article>               
+                
+                <article>
+                    <input type="submit">  
+                    
+                    <input type="reset">
+                </article>
+                
+                
+          </form>
+        </section>
+</body>
+</html>
