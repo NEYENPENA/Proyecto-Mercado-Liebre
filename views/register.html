@@ -8,70 +8,112 @@
     <title>Register</title>
 </head>
 <body class="register">
-
-    <section>
-        <form action="/" method="POST">
-            <article class="usuario">
-                <label for="nombre">Nombre y Apellido:</label>
-                <input type="name" name="name" id="nombre" required="">
-                    
-                <label for="user">Nombre de Usuario:</label>
-                <input type="username" name="username" id="user">            
-              
+    <form action="/" class="wrapper">
+        <h1 class="titulo">
+          Formulario de Registro
+        </h1>
+        <div class="form">
+           <div class="inputfield">
+              <label for="nombre">Nombre y Apellido</label>
+              <input type="text" class="input" name="name" id="nombre">
+           </div>  
+            <div class="inputfield">
+                <label for="user">Nombre de Usuario</label>
+              <input type="username" class="input" name="username" id="user">
+           </div> 
+           <div class="inputfield">
                 <label for="date">Fecha de Nacimiento</label>
-                <input type="date" name="fecha" id="date">
-                    
+                <input type="date" class="input" name="fecha" id="date"> 
+           </div>
+            <div class="inputfield">
                 <label for="domicilio">Domicilio</label>
-                <input type="text" id="domicilio" name="domicilio">
-            </article>   
-            <article class="negocio">
-                         
-                      <h3>Que desa Hacer</h3>
-                      <label for="perfil">Comprar</label>
-                      <input type="radio" name="perfil" value="Comprar">
-                      <label for="perfil">Vender</label>
-                      <input type="radio" name="perfil" value="Vender">              
-                     
-            </article>
+                <input type="text" class="input" id="domicilio" name="domicilio">                    
+            </div>
+            <h3 class="subtitulo">
+                Perfil de Usuario
+              </h3>               
+                <div class="inputfield otros">
+                    <label for="perfil" class="check">
+                      <input name="perfil"  type="radio"> 
+                    </label>
+                    <p>Comprador</p>
+                 </div> 
 
-                <article class="categorias">
-                    <h3>Categorias de Interes</h3>
-                    <label for="electro">Electro</label>
-                    <input type="checkbox" name="categorias" value="Electro" id="electro">
-                    
-                    <br><label for="moda">Moda</label>
-                    <input type="checkbox" name="categorias" value="Moda" id="moda">
-                    
-                    <br><label for="juguetes">Jugueteria</label>
-                    <input type="checkbox" name="categorias" value="Jugueteria" id="jugetes">
-                    
-                    <br><label for="Hogar">Hogar</label>
-                    <input type="checkbox" name="categorias" value="Hogar" id="Hogar">
-                    
-                    <br><label for="vida">Vida Sana</label>
-                    <input type="checkbox" name="categorias" value="Vida Sana" id="vida">
-                </article>                      
-            
-            
-               <article>
-                    <label for="photo">Foto de Usuario</label>
-                    <input type="file" name="Avatar" id="photo" accept=".jpg,.png">
-                                            
-                    <label for="contraseña">Contraseña:</label>
-                    <input type="password" name="password" id="contraseña" required="">
-                    
-                    <label for="confirm">Confirmar Contraseña:</label>
-                    <input type="password" name="confirmpassword" id="confirm" required=""> 
-               </article>               
+            <div class="inputfield otros">
+                <label for="perfil" class="check">
+                  <input type="radio" name="perfil">
+                </label>
+                <p>Vendedor</p>
+             </div> 
+        
+            <h3 class="subtitulo">
+                Categorias de Interes
+              </h3>
+                <!-- cambiar clases -->
+                <div class="inputfield otros">
+                    <label for="electro" class="check">
+                      <input name="categorias"  type="checkbox" value="Electro" id="electro">
+                    </label>
+                    <p>Electro</p>
+                 </div> 
+
+                 <div class="inputfield otros">
+                    <label for="moda" class="check">
+                      <input name="categorias" type="checkbox" value="Moda" id="moda"> 
+                    </label>
+                    <p>Moda</p>
+                 </div> 
                 
-                <article>
-                    <input type="submit">  
+                 <div class="inputfield otros">
+                    <label for="juguetes" class="check">
+                      <input name="categorias" type="checkbox" value="Jugueteria" id="juguetes">
+                    </label>
+                    <p>Jugueteria</p>
+                 </div>                                                    
                     
-                    <input type="reset">
-                </article>
+                 <div class="inputfield otros">
+                    <label for="Hogar" class="check">
+                      <input name="categorias" type="checkbox" value="Hogar" id="Hogar">
+                    </label>
+                    <p>Hogar</p>
+                 </div>   
+
+                 <div class="inputfield otros">
+                    <label for="vida" class="check">
+                      <input name="categorias" type="checkbox" value="Vida Sana" id="vida">
+                    </label>
+                    <p>Vida Sana</p>
+                 </div>   
+                                   
+
+                 <div class="inputfield">
+                    <label >Foto de Usuario</label>
+                    <input type="file" name="Avatar" accept=".jpg,.png" class="input">
+                </div>                                                             
                 
-                
-          </form>
-        </section>
+           <div class="inputfield">
+              <label for="contraseña">Contraseña</label>
+              <input type="password" class="input" id="contraseña">
+           </div>  
+          <div class="inputfield">
+              <label for="confirm">Confirmar Contraseña</label>
+              <input type="password" class="input" name="confirmpassword" id="confirm">
+           </div> 
+           <div class="inputfield otros">
+            <label class="check">
+              <input type="checkbox" required="">
+              <span class="checkmark"></span>
+            </label>
+            <p>Acepto los terminos y condiciones</p>
+         </div>        
+           <div class="inputfield">
+            <input type="submit" value="Registrarse" class="btn">
+          </div>        
+          <div class="inputfield">
+            <input type="reset" value="Eliminar Datos" class="btn">
+          </div>
+        </div> 
+        
+    </form>      
 </body>
 </html>

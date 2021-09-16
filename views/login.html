@@ -8,16 +8,25 @@
     <title>Login</title>
 </head>
 <body class="login">
-        <form action="/register" method="POST">
-            
-            <label for="user">Nombre de Usuario:</label>
-            <input type="username" name="username" id="user" required="" placeholder="Usuario">
-                        
-            <label for="contraseña">Contraseña:</label>
-            <input type="password" name="password" id="contraseña" required="" placeholder="Contraseña">
-                            
-            <input type="submit" value="Ingresar">
-        
+        <form class="wrapperlog" action="/register" method="POST">
+            <h1 class="titulolog">
+                iniciar sesión
+            </h1>
+            <div class="form">
+               <div class="inputfield">
+                    <label for="user">Nombre de Usuario:</label>
+                    <input class="input" type="username" name="username" id="user" required="" placeholder="Usuario">
+               </div>
+
+                <div class="inputfield">                                
+                    <label for="contraseña">Contraseña:</label>
+                    <input class="input" type="password" name="password" id="contraseña" required="" placeholder="Contraseña">
+                </div>
+                                
+                <div class="inputfield">
+                    <input class="btn" type="submit" value="Ingresar">
+                </div>
+            </div>        
         </form>
 </body>
 </html>
