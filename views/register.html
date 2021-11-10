@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Register</title>
+</head>
+<body class="register">
+    <form action="/" class="wrapper">
+        <h1 class="titulo">
+          Formulario de Registro
+        </h1>
+        <div class="form">
+           <div class="inputfield">
+              <label for="nombre">Nombre y Apellido</label>
+              <input type="text" class="input" name="name" id="nombre">
+           </div>  
+            <div class="inputfield">
+                <label for="user">Nombre de Usuario</label>
+              <input type="username" class="input" name="username" id="user">
+           </div> 
+           <div class="inputfield">
+                <label for="date">Fecha de Nacimiento</label>
+                <input type="date" class="input" name="fecha" id="date"> 
+           </div>
+            <div class="inputfield">
+                <label for="domicilio">Domicilio</label>
+                <input type="text" class="input" id="domicilio" name="domicilio">                    
+            </div>
+            <h3 class="subtitulo">
+                Perfil de Usuario
+              </h3>               
+                <div class="inputfield otros">
+                    <label for="perfil" class="check">
+                      <input name="perfil"  type="radio"> 
+                    </label>
+                    <p>Comprador</p>
+                 </div> 
+
+            <div class="inputfield otros">
+                <label for="perfil" class="check">
+                  <input type="radio" name="perfil">
+                </label>
+                <p>Vendedor</p>
+             </div> 
+        
+            <h3 class="subtitulo">
+                Categorias de Interes
+              </h3>
+                <!-- cambiar clases -->
+                <div class="inputfield otros">
+                    <label for="electro" class="check">
+                      <input name="categorias"  type="checkbox" value="Electro" id="electro">
+                    </label>
+                    <p>Electro</p>
+                 </div> 
+
+                 <div class="inputfield otros">
+                    <label for="moda" class="check">
+                      <input name="categorias" type="checkbox" value="Moda" id="moda"> 
+                    </label>
+                    <p>Moda</p>
+                 </div> 
+                
+                 <div class="inputfield otros">
+                    <label for="juguetes" class="check">
+                      <input name="categorias" type="checkbox" value="Jugueteria" id="juguetes">
+                    </label>
+                    <p>Jugueteria</p>
+                 </div>                                                    
+                    
+                 <div class="inputfield otros">
+                    <label for="Hogar" class="check">
+                      <input name="categorias" type="checkbox" value="Hogar" id="Hogar">
+                    </label>
+                    <p>Hogar</p>
+                 </div>   
+
+                 <div class="inputfield otros">
+                    <label for="vida" class="check">
+                      <input name="categorias" type="checkbox" value="Vida Sana" id="vida">
+                    </label>
+                    <p>Vida Sana</p>
+                 </div>   
+                                   
+
+                 <div class="inputfield">
+                    <label >Foto de Usuario</label>
+                    <input type="file" name="Avatar" accept=".jpg,.png" class="input">
+                </div>                                                             
+                
+           <div class="inputfield">
+              <label for="contraseña">Contraseña</label>
+              <input type="password" class="input" id="contraseña">
+           </div>  
+          <div class="inputfield">
+              <label for="confirm">Confirmar Contraseña</label>
+              <input type="password" class="input" name="confirmpassword" id="confirm">
+           </div> 
+           <div class="inputfield otros">
+            <label class="check">
+              <input type="checkbox" required="">
+              <span class="checkmark"></span>
+            </label>
+            <p>Acepto los terminos y condiciones</p>
+         </div>        
+           <div class="inputfield">
+            <input type="submit" value="Registrarse" class="btn">
+          </div>        
+          <div class="inputfield">
+            <input type="reset" value="Eliminar Datos" class="btn">
+          </div>
+        </div> 
+        
+    </form>      
+</body>
+</html>
